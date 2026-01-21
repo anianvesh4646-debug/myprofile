@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anvesh | Resume</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- PROFILE SECTION -->
+  <div class="profile">
+    <img src="profile.jpg" alt="My Photo">
+    <h1>Anvesh Ranaveni</h1>
+    <p class="tagline">Aspiring Software Developer</p>
+
+    <p class="about">
+      I am a passionate learner and aspiring developer with basic knowledge
+      of Python, HTML, and CSS. I enjoy building real-world projects and
+      creating educational content. I am also a YouTube content creator
+      with 2K+ subscribers, sharing tech and learning-related videos.
+    </p>
+
+    <button onclick="toggleResume()">📄 Resume / Print</button>
+
+    <a href="https://www.youtube.com/@yourchannelname" target="_blank">
+      <button class="youtube">▶ YouTube Channel</button>
+    </a>
+  </div>
+
+  <!-- RESUME SECTION (HIDDEN) -->
+  <div id="resume" class="resume">
+
+    <section>
+      <h2>Career Objective</h2>
+      <p>
+        Motivated student seeking opportunities to apply technical
+        skills and grow as a software professional.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech – Computer Science (2022–2026)</li>
+        <li>XYZ College, Telangana</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python (Basic)</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Basic Web Development</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <b>Cattle Management – Realtime Project</b><br>
+          A system designed to manage cattle data, monitoring, and records
+          using real-time information.
+        </li>
+        <li>
+          <b>Quiz Application</b><br>
+          A web-based quiz application with multiple question types,
+          timers, and score tracking.
+        </li>
+        <li>
+          <b>Women Safety Device</b><br>
+          An IoT-based project aimed at improving women’s safety by sending
+          emergency alerts in critical situations.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Content Creation</h2>
+      <p>
+        YouTube Content Creator with 2,000+ subscribers, creating
+        educational and tech-focused videos.
+      </p>
+    </section>
+
+    <div class="buttons">
+      <button onclick="window.print()">🖨 Print / Save PDF</button>
+
+      <a href="portfolio.pdf" download>
+        <button class="download">📂 Download Portfolio</button>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function toggleResume() {
+  const resume = document.getElementById("resume");
+  resume.style.display =
+    resume.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
